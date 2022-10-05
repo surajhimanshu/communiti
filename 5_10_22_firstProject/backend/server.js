@@ -1,3 +1,6 @@
+const NodeRSA = require('node-rsa');
+const key = new NodeRSA({b: 512});
+
 const io = require("socket.io")( 3000, {
     cors: {
       origin: ["http://localhost:8080/"],
